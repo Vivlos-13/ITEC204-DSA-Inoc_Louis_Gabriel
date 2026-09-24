@@ -30,9 +30,9 @@ while True:
             print("Not found.")
     elif choice == "4":
         id = input("Incident ID to remove: ")
-        for t in tickets:
-            if t[0] == id:
-                tickets.remove(t)
+        for i in range(len(tickets)):
+            if tickets[i][0] == id:
+                tickets.pop(i)
                 print("Removed.")
                 break
         else:
